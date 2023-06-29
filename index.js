@@ -93,6 +93,7 @@ function buildMoviesSection(list, categoryName){
         <div class="movie-item" onmouseenter="searchMovieTrailer('${item.title}', 'yt${item.id}')">
             <img class="move-item-img" src="${imgPath}${item.backdrop_path}" alt="${item.title}" />
             <div class="iframe-wrap" id="yt${item.id}"></div>
+            <div><h5>${item.title}</h5> </div>
         </div>`;
     }).join('');
 
